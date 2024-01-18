@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Microwave", "Microwave.vbproj", "{DDD1900C-4BFB-4806-A283-31B52085D226}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Week1-Hello", "Week1-Hello.vbproj", "{C7D72DF4-B4DC-44C1-A9DE-CE71FB14091C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DDD1900C-4BFB-4806-A283-31B52085D226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DDD1900C-4BFB-4806-A283-31B52085D226}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DDD1900C-4BFB-4806-A283-31B52085D226}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DDD1900C-4BFB-4806-A283-31B52085D226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7D72DF4-B4DC-44C1-A9DE-CE71FB14091C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7D72DF4-B4DC-44C1-A9DE-CE71FB14091C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7D72DF4-B4DC-44C1-A9DE-CE71FB14091C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7D72DF4-B4DC-44C1-A9DE-CE71FB14091C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2594BDB1-882C-4347-9529-65803B038734}
+		SolutionGuid = {FAA0614B-A984-4BC6-972A-EF08CB2A70F4}
 	EndGlobalSection
 EndGlobal
