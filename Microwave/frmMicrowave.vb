@@ -1,5 +1,5 @@
 ﻿Public Class frmMicrowave
-
+    ' Scott Wegley, CSC-300 Spring 2024, Homework #1 Model a Microwave Oven
     Private Sub btnNum_Click(sender As Object, e As EventArgs) Handles btnOne.Click, btnTwo.Click, btnThree.Click, btnFour.Click, btnFive.Click, btnSix.Click, btnSeven.Click, btnEight.Click, btnNine.Click, btnZero.Click
         If pnlDoor.BackColor = Color.LightGreen Then GoTo Quit
         Dim intToAdd As Integer = CInt(CType(sender, Button).Text)
