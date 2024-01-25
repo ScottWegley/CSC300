@@ -23,6 +23,7 @@ Public Class frmCalculator
                 txtDisplay.Text = txtDisplay.Text.Replace(txtDisplay.Text.Substring(I, 1), "")
             End If
         Next
+        txtDisplay.Select(txtDisplay.TextLength, 0)
     End Sub
 
     Private Sub btnNumerics_Click(sender As Object, e As EventArgs) Handles btnOne.Click, btnTwo.Click, btnThree.Click, btnFour.Click, btnFive.Click, btnSix.Click, btnSeven.Click, btnEight.Click, btnNine.Click, btnZero.Click, btnDoubleZero.Click
@@ -41,6 +42,10 @@ Public Class frmCalculator
     End Sub
 
     Private Sub frmCalculator_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        txtDisplay.Focus()
+    End Sub
+
+    Private Sub txtDisplay_LostFocus(sender As Object, e As EventArgs) Handles txtDisplay.LostFocus
         txtDisplay.Focus()
     End Sub
 End Class
