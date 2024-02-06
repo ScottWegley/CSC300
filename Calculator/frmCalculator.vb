@@ -6,13 +6,17 @@ Public Class frmCalculator
 
     ' Scott Wegley, CSC-300 Spring 2024, Homework #? - Build a Calculator
 
-    Public dblTermOne As Double
-    Public dblTermTwo As Double
+    Public dblTermOne As Double = 0
+    Public dblTermTwo As Double = 0
 
     Public boolFirstDecimal As Boolean = False
     Public boolSecondDecimal As Boolean = False
 
+    Public strOperation As String = ""
+
     Public boolStoreFirst As Boolean = True
+
+    Public Const MAX_TAPE_LINES As Integer = 15
 
     Private Sub txtDisplay_TextChanged(sender As Object, e As EventArgs) Handles txtDisplay.TextChanged
         If Not txtDisplay.Text.IndexOf(".") = -1 Then
@@ -30,9 +34,23 @@ Public Class frmCalculator
         txtDisplay.Text = txtDisplay.Text & CType(sender, Button).Text
     End Sub
 
-    'Private Sub btnOperations_Click(sender As Object, e As EventArgs) Handles btnPlus.Click, btnMinus.Click, btnMultiply.Click, btnDivide.Click, btnEquals.Click
+    Private Sub btnOperations_Click(sender As Object, e As EventArgs) Handles btnPlus.Click, btnMinus.Click, btnMultiply.Click, btnDivide.Click
+        strOperation = (CType(sender, Button)).Text
+        If boolStoreFirst Then
+            dblTermOne = CDbl(txtDisplay.Text)
+            txtDisplay.Clear()
+        Else
 
-    'End Sub
+        End If
+    End Sub
+
+    Private Sub addTapeLine(strToAdd As String)
+        Dim intLineCount As Integer = lblTape.Text.Count(Function(c As Char) c = "\n")
+        MsgBox(intLineCount)
+        If intLineCount = MAX_TAPE_LINES Then
+            lblTape.Text = lblTape.Text.Substring(0, lblTape.Text.IndexOf("\n"))
+        End If
+    End Sub
 
     Private Sub btnDecimal_Click(sender As Object, e As EventArgs) Handles btnDecimal.Click
         If If(boolStoreFirst, Not boolFirstDecimal, Not boolSecondDecimal) Then

@@ -37,6 +37,7 @@ Partial Class frmMicrowave
         Me.btnSix = New System.Windows.Forms.Button()
         Me.btnFive = New System.Windows.Forms.Button()
         Me.btnFour = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.pnlControls.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -190,11 +191,21 @@ Partial Class frmMicrowave
         Me.btnFour.Text = "4"
         Me.btnFour.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(550, 13)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(16, 23)
+        Me.Button1.TabIndex = 6
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'frmMicrowave
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(784, 361)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.pnlControls)
         Me.Controls.Add(Me.pnlDoor)
         Me.Name = "frmMicrowave"
@@ -219,4 +230,5 @@ Partial Class frmMicrowave
     Friend WithEvents btnFour As Button
     Friend WithEvents btnClear As Button
     Friend WithEvents btnStart As Button
+    Friend WithEvents Button1 As Button
 End Class

@@ -25,4 +25,8 @@ Quit:
         lblClock.Text = "Running"
         pnlDoor.BackColor = Color.LightGreen
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        MsgBox(modTimeHelpers.convertToTimeDisplay(1))
+    End Sub
 End Class
